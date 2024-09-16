@@ -14,13 +14,13 @@
     var header_navbar = document.querySelector(".navbar-area");
     var sticky = header_navbar.offsetTop;
 
-    var logo = document.querySelector(".navbar-brand img");
+    var logo = document.querySelector(".navbar-brand span");
     if (window.pageYOffset > sticky) {
       header_navbar.classList.add("sticky");
-      logo.src = "assets/images/logo/logo.svg";
+      logo.className = "text-[#488cca] font-bold text-2xl";
     } else {
       header_navbar.classList.remove("sticky");
-      logo.src = "assets/images/logo/white-logo.svg";
+      logo.className = "text-white font-bold text-2xl";
     }
 
     // show or hide the back-top-top button
